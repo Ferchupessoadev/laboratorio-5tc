@@ -7,7 +7,7 @@
 	</div>
 	<nav class="nav" id="nav">
 		<ul class="nav__ul">
-			<li class="nav__li"><a class="nav__a" href="/">Home</a></li>
+			<li class="nav__li"><a class="nav__a" href="/">Inicio</a></li>
 			<li class="nav__li"><a class="nav__a" href="/nosotros">Nosotros</a></li>
 			<li class="nav__li"><a class="nav__a" href="/galeria">Galeria</a></li>
 			<li class="nav__li"><a class="nav__a" href="/proyectos">Proyectos</a></li>
