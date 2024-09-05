@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>404 - Not Found</title>
+	<title>Laboratorio 5to T.C</title>
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -11,7 +11,7 @@
 	<?php require ('partials/header.php'); ?>
 	<main class="main">
 		<section class="main__section">
-			<h2 class="main__title">Error <b>404</b> - Pagina no encontrado</h2>
+			<h2 class="main__title">Bienvenido</h2>
 			<p class="main__content">Somos los alumnos de 5to T.C de la escuela técnica N°2 y creamos una pequeña web para explicarte como
 				funcionan las redes e internet.
 			</p>

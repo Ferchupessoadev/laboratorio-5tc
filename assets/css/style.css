@@ -1,0 +1,124 @@
+* {
+  background: rgb(69, 6, 6);
+  color: #fff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid #fff;
+  position: relative; /* Para posicionar el menú */
+
+  & .nav {
+    display: flex;
+    height: 100%;
+    margin-right: 20px;
+
+    & .nav__ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 100%;
+
+      & .nav__li {
+        cursor: pointer;
+        width: 100%;
+
+        & .nav__a {
+          text-decoration: none;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .header__h1 {
+    margin-left: 20px;
+  }
+
+  .menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    span {
+      background-color: #fff;
+      height: 3px;
+      width: 100%;
+    }
+  }
+
+  /* Menu oculto por defecto en mobile */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100vh - 60px);
+
+      & .nav__ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+      }
+    }
+    .open {
+      display: flex;
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header .menu-btn {
+    display: flex;
+  }
+
+  .header__h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+
+  & .main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    & .main__title {
+      font-size: 2.5rem;
+    }
+
+    & .main__content {
+      font-size: 1.5rem;
+    }
+  }
+}

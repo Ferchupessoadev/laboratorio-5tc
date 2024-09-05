@@ -6,17 +6,30 @@ class Route
 {
     public static $routes = [];
 
-    public static function get($uri, $callback)
+    /**
+     * Add a GET route
+     * @param string $uri
+     * @param callable $callback
+     */
+    public static function get($uri, $callback): void
     {
         self::$routes[$uri] = $callback;
     }
 
-    public static function post($uri, $callback)
+    /**
+     * Add a POST route
+     * @param string $uri
+     * @param callable $callback
+     */
+    public static function post($uri, $callback): void
     {
         self::$routes[$uri] = $callback;
     }
 
-    public static function start()
+    /**
+     * Dispatch the route
+     */
+    public static function start(): void
     {
         $uri = $_SERVER['REQUEST_URI'];
         $uri = explode('?', $uri)[0];
@@ -27,5 +40,8 @@ class Route
                 return;
             }
         }
+
+        header('HTTP/1.0 404 Not Found');
+        require 'view/404.php';
     }
 }
