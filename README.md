@@ -1,3 +1,6 @@
+# Página web sencilla para explicar como funcionan las redes en la Expo técnica 2024. 
+La documentación de abajo es para configurar apache para poder utilizar el enrutador que esta implementado en la carpeta /lib/Route.php
+
 Para crear un enrutador básico en Apache2 utilizando mod_rewrite, que te permitirá redirigir todas las peticiones hacia un único archivo (como index.php), sigue estos pasos:
 
 1. Habilitar el módulo mod_rewrite:
